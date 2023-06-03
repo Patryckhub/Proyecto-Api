@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modificar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+    <script src="./js/modificar.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6 offset-3">
+                <h1>Modificar Empleado</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6 offset-3">
+                <div class="form-group">
+                    <label for="input-nombre">Nombre del empleado a modificar</label>
+                    <input type="text" class="form-control" id="input-nombre" placeholder="Nombre del empleado">
+                </div>
+                <div class="form-group">
+                    <label for="input-nombre">Nombre nuevo</label>
+                    <input type="text" class="form-control" id="input-nuevo" placeholder="Nombre del empleado">
+                </div>
+                <div class="form-group">
+                    <label for="input-apellidos">Apellidos nuevos</label>
+                    <input type="text" class="form-control" id="input-apellidos" placeholder="Ibarra ">
+                </div>
+                <div class="form-group">   
+                    <label for="input-telefono">Telefono nuevo</label>
+                    <input type="text" class="form-control" id="input-telefono" placeholder="442...">
+                </div>
+                <div class="form-group">
+                    <label for="input-correo">Correo electrónico nuevo</label>
+                    <input type="email" class="form-control" id="input-correo" placeholder="correo@dominio.ext">
+                </div>
+                <div class="form-group">
+                    <label for="input-direccion">Direccion nueva</label>
+                    <input type="text" class="form-control" id="input-direccion" placeholder="Col y NUM">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary">Modificar</button>
+                    <button class="btn btn-secondary">Regresar al lobby</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
