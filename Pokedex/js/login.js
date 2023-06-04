@@ -9,15 +9,15 @@ function init() {
 }
 
 function login() {
-    var nombre = document.getElementById('input-nombre').value;
-    var correo = document.getElementById('input-correo').value;
+    var correo = document.getElementById('input-mail').value;
+    var pass = document.getElementById('input-password').value;
 
     axios({
         method: 'post',
-        url: 'http://localhost:3000/empleados/login',
+        url: 'http://localhost:3000/user/login',
         data: {
-            nombre: nombre,
-            correo: correo
+            user_mail: correo,
+            user_password: pass
         }
     }).then(function(res) {
         if(res.data.code === 200){

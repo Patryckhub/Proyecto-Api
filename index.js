@@ -4,6 +4,7 @@ const app = express();
 
 //Routes
 const empleados = require('./routes/empleados');
+const user = require('./routes/user');
 
 
 //Middleware
@@ -28,6 +29,8 @@ DELETE Elimitar registros etc
 */
 
 app.get("/", index);
+
+app.use("/user", user);
 
 app.use("/empleados", empleados);
 

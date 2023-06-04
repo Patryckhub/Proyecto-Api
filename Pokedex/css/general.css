@@ -1,14 +1,14 @@
   /*  GENERAL */
+  body{
+    background-color: black;
+    color: #fff;
+  }
 
-  article {
-    background: linear-gradient(
-      to right, 
-      hsl(98 100% 62%), 
-      hsl(204 100% 59%)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .form-group {
     text-align: center;
+  }
+  .form-group label {
+    font-size: 18px; 
   }
   
   h1 {
@@ -47,13 +47,12 @@
 
   .form-control {
     background-color: #212121;
-    max-width: 90px;
+    max-width: 200px;
     height: 20px;
     padding: 10px;
-    /* text-align: center; */
     border: 2px solid white;
     border-radius: 5px;
-    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+    color: #fff;
   }
   
   .form-control:focus {

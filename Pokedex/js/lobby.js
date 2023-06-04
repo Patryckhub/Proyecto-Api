@@ -4,6 +4,7 @@ function init() {
         window.location.href= "login.html";
     }else{
         document.querySelector('.btn-primary').addEventListener('click', function(){
+            localStorage.removeItem("token");
             window.location.href="login.html"
         });
         document.querySelector('.btn-secondary').addEventListener('click', function(){
@@ -20,6 +21,9 @@ function init() {
         });
         document.querySelector('.btn-base').addEventListener('click', function(){
             window.location.href="base.html"
+        });
+        document.querySelector('.btn-agregar').addEventListener('click', function(){
+            window.location.href="agregar.html"
         });
     
     }
